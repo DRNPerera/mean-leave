@@ -1,0 +1,27 @@
+/*table, th, td {*/
+  /*border: 1px solid black;*/
+/*}*/
+/*th, td {*/
+  /*padding: 15px;*/
+  /*text-align: left;*/
+/*}*/
+
+
+/*table {*/
+  /*font-family: arial, sans-serif;*/
+  /*border-collapse: collapse;*/
+  /*width: 100%;*/
+/*}*/
+
+.text tr td{
+  padding-left: 40px;
+}
+.all {
+  background-image: url(../../../assets/image/profile.jpg);
+  /*padding: 20px;*/
+  background-repeat: no-repeat;
+  height: 505px;
+  background-size: cover;
+
+}
+
