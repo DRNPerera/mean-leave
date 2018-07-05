@@ -122,12 +122,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _services_authguard_service__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./services/authguard.service */ "./src/app/services/authguard.service.ts");
 /* harmony import */ var _components_about_about_component__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./components/about/about.component */ "./src/app/components/about/about.component.ts");
 /* harmony import */ var _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./components/footer/footer.component */ "./src/app/components/footer/footer.component.ts");
+/* harmony import */ var _components_register_register_component__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./components/register/register.component */ "./src/app/components/register/register.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -202,6 +204,7 @@ var AppModule = /** @class */ (function () {
                 _components_control_dates_control_dates_component__WEBPACK_IMPORTED_MODULE_23__["ControlDatesComponent"],
                 _components_about_about_component__WEBPACK_IMPORTED_MODULE_28__["AboutComponent"],
                 _components_footer_footer_component__WEBPACK_IMPORTED_MODULE_29__["FooterComponent"],
+                _components_register_register_component__WEBPACK_IMPORTED_MODULE_30__["RegisterComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -810,7 +813,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"container\">\n  <div class=\"container\">\n    <div class=\"col-md-4\"></div>\n    <div class=\"col-md-4\"><h2 class = \"page-header\">Login</h2></div>\n    <div class=\"col-md-4\"></div>\n  </div>\n\n  <form (submit) = \"loginUser()\">\n    <div class=\"container\">\n      <div class=\"col-md-4\"></div>\n      <div class = \"form-group col-md-4\">\n        <label>Email</label>\n        <input type=\"text\" [(ngModel)] = \"email\" name =\"email\" class = \"form-control\">\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-4\"></div>\n      <div class = \"form-group col-md-4\">\n        <label>Password</label>\n        <input type=\"text\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\">\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-4\"></div>\n      <div class=\"col-md-4\"><input type=\"submit\" class =\"btn btn-primary btn-block\" value = \"Login\"></div>\n      <div class=\"col-md-4\"></div>\n    </div>\n  </form>\n</div>\n"
+module.exports = "<div class = \"container\">\n  <div class=\"container\">\n    <div class=\"col-md-4\"></div>\n    <div class=\"col-md-4\"><h2 class = \"page-header\">Login</h2></div>\n    <div class=\"col-md-4\"></div>\n  </div>\n\n  <form (submit) = \"loginUser()\">\n    <div class=\"container\">\n      <div class=\"col-md-4\"></div>\n      <div class = \"form-group col-md-4\">\n        <label>Email</label>\n        <input type=\"text\" [(ngModel)] = \"email\" name =\"email\" class = \"form-control\">\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-4\"></div>\n      <div class = \"form-group col-md-4\">\n        <label>Password</label>\n        <input type=\"password\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\">\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-4\"></div>\n      <div class=\"col-md-4\"><input type=\"submit\" class =\"btn btn-primary btn-block\" value = \"Login\"></div>\n      <div class=\"col-md-4\"></div>\n    </div>\n  </form>\n</div>\n"
 
 /***/ }),
 
@@ -903,7 +906,7 @@ module.exports = "table {\n    font-family: arial, sans-serif;\n    border-colla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Register Users</h2>\n  <form (submit) = \"registerData()\">\n    <div class = \"form-group col-md-7\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)] = \"full_name\" name =\"full_name\" class = \"form-control\">\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Phone No.</label>\n      <input type=\"text\" [(ngModel)] = \"phone\" name =\"phone\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)] = \"username\" name =\"username\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Email</label>\n      <input type=\"text\" [(ngModel)] = \"email\" name =\"email\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Password</label>\n      <input type=\"text\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Level</label>\n      <input type=\"text\" [(ngModel)] = \"state\" name =\"state\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class=\"col-md-7\">\n      <input type=\"submit\" class =\"btn btn-primary\" value = \"Submit\">\n    </div>\n\n    <div class=\"col-md-5\"></div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Name</th>\n\t\t\t   <th>Post</th>\n\t\t\t   <th>Contact</th>\n         <th>Update</th>\n\t\t\t   <th>Delete</th>\n\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let user of users\">\n\t\t\t   <td>{{user.full_name}}</td>\n\t\t\t   <td>{{user.post}}</td>\n\t\t\t   <td>{{user.phone}}</td>\n        <th><input type=\"button\" (click) = \"updateUser(user._id)\" value= \"Edit\" class =\"btn btn-success\"></th>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteUser(user._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\n\t\t\t</tr>\n\n\t</table>\n</div>\n\n"
+module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Register Users</h2>\n  <form (submit) = \"registerData()\">\n    <div class = \"form-group col-md-7\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)] = \"full_name\" name =\"full_name\" class = \"form-control\">\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Phone No.</label>\n      <input type=\"text\" [(ngModel)] = \"phone\" name =\"phone\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)] = \"username\" name =\"username\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Email</label>\n      <input type=\"text\" [(ngModel)] = \"email\" name =\"email\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Password</label>\n      <input type=\"password\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Level</label>\n      <input type=\"text\" [(ngModel)] = \"state\" name =\"state\" class = \"form-control\" required>\n    </div>\n    <div class=\"col-md-5\"></div>\n\n    <div class=\"col-md-7\">\n      <input type=\"submit\" class =\"btn btn-primary\" value = \"Submit\">\n    </div>\n\n    <div class=\"col-md-5\"></div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Name</th>\n\t\t\t   <th>Post</th>\n\t\t\t   <th>Contact</th>\n         <th>Update</th>\n\t\t\t   <th>Delete</th>\n\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let user of users\">\n\t\t\t   <td>{{user.full_name}}</td>\n\t\t\t   <td>{{user.post}}</td>\n\t\t\t   <td>{{user.phone}}</td>\n        <th><input type=\"button\" (click) = \"updateUser(user._id)\" value= \"Edit\" class =\"btn btn-success\"></th>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteUser(user._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\n\t\t\t</tr>\n\n\t</table>\n</div>\n\n"
 
 /***/ }),
 
@@ -1169,7 +1172,7 @@ module.exports = "table {\n    font-family: arial, sans-serif;\n    border-colla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Register Employee</h2>\n  <form (submit) = \"registerData()\">\n    <div class = \"form-group col-md-7\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)] = \"full_name\" name =\"full_name\" class = \"form-control\">\n    </div>\n    <!--<div class=\"col-md-4\"></div>-->\n\n    <div class = \"form-group col-md-7\">\n      <label>Phone No.</label>\n      <input type=\"text\" [(ngModel)] = \"phone\" name =\"phone\" class = \"form-control\" required>\n    </div>\n    <!--<div class=\"col-md-4\"></div>-->\n\n    <div class = \"form-group col-md-7\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)] = \"username\" name =\"username\" class = \"form-control\" required>\n    </div>\n    <div class = \"form-group col-md-7\">\n      <label>Email</label>\n      <input type=\"text\" [(ngModel)] = \"email\" name =\"email\" class = \"form-control\" required>\n    </div>\n    <div class = \"form-group col-md-7\">\n      <label>Password</label>\n      <input type=\"text\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\" required>\n    </div>\n\n    <div class=\"col-md-7\">\n      <input type=\"submit\" class =\"btn btn-primary\" value = \"Submit\">\n    </div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Name</th>\n\t\t\t   <th>Post</th>\n\t\t\t   <th>Contact</th>\n\t\t\t   <th>Delete</th>\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let user of users\">\n\t\t\t   <td>{{user.full_name}}</td>\n\t\t\t   <td>{{user.post}}</td>\n\t\t\t   <td>{{user.phone}}</td>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteUser(user._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\t\t\t</tr>\n\n\t</table>\n</div>\n"
+module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Register Employee</h2>\n  <form (submit) = \"registerData()\">\n    <div class = \"form-group col-md-7\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)] = \"full_name\" name =\"full_name\" class = \"form-control\">\n    </div>\n    <!--<div class=\"col-md-4\"></div>-->\n\n    <div class = \"form-group col-md-7\">\n      <label>Phone No.</label>\n      <input type=\"text\" [(ngModel)] = \"phone\" name =\"phone\" class = \"form-control\" required>\n    </div>\n    <!--<div class=\"col-md-4\"></div>-->\n\n    <div class = \"form-group col-md-7\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)] = \"username\" name =\"username\" class = \"form-control\" required>\n    </div>\n    <div class = \"form-group col-md-7\">\n      <label>Email</label>\n      <input type=\"text\" [(ngModel)] = \"email\" name =\"email\" class = \"form-control\" required>\n    </div>\n    <div class = \"form-group col-md-7\">\n      <label>Password</label>\n      <input type=\"password\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\" required>\n    </div>\n\n    <div class=\"col-md-7\">\n      <input type=\"submit\" class =\"btn btn-primary\" value = \"Submit\">\n    </div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Name</th>\n\t\t\t   <th>Post</th>\n\t\t\t   <th>Contact</th>\n\t\t\t   <th>Delete</th>\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let user of users\">\n\t\t\t   <td>{{user.full_name}}</td>\n\t\t\t   <td>{{user.post}}</td>\n\t\t\t   <td>{{user.phone}}</td>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteUser(user._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\t\t\t</tr>\n\n\t</table>\n</div>\n"
 
 /***/ }),
 
@@ -1278,7 +1281,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <!--<a class=\"navbar-brand\" href=\"http://ucsc.cmb.ac.lk/\">UCSC</a>-->\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li><a [routerLink]=\"['/']\">Home <span class=\"sr-only\">(current)</span></a></li>\n        <li><a [routerLink]=\"['/about']\">About</a></li>\n      </ul>\n\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"!authService.loggedIn()\"><a [routerLink]=\"['/login']\">Login</a></li>\n\n        <li *ngIf=\"authService.loggedIn()\" class=\"dropdown\">\n          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">{{user.getAuthName()}} <span class=\"caret\"></span></a>\n\n          <ul class=\"dropdown-menu\">\n            <li *ngIf=\"authService.isStaff() || authService.isAdmin() || authService.isHead()\"><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li *ngIf=\"authService.isStaff() || authService.isAdmin()\"><a [routerLink]=\"['/requestLeaves']\">Request Leaves</a></li>\n            <li *ngIf=\"authService.isStaff() || authService.isAdmin()\"><a [routerLink]=\"['/leaveHistory']\">History of Leaves</a></li>\n            <li *ngIf=\"authService.isAdmin()\"><a [routerLink]=\"['/manageUsers']\">Manage Staff</a></li>\n            <li *ngIf=\"authService.isAdmin() || authService.isHead()\"><a [routerLink]=\"['/addPost']\">Add Post</a></li>\n            <li *ngIf=\"authService.isAdmin()\"><a [routerLink]=\"['/reportGenaration']\">Report Genaration</a></li>\n            <li *ngIf=\"authService.isHead()\"><a [routerLink]=\"['/manageAdmin']\">Manage Users</a></li>\n            <li *ngIf=\"authService.isHead()\"><a [routerLink]=\"['/manageLeaves']\">Manage Leaves</a></li>\n            <li *ngIf=\"authService.isHead()\"><a [routerLink]=\"['/controlDates']\">Control Dates</a></li>\n            <li role=\"separator\" class=\"divider\"></li>\n            <li><a href=\"#\" (click)=\"logoutUser()\">Logout</a></li>\n          </ul>\n        </li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n\n\n\n"
+module.exports = "<nav class=\"navbar-inverse\">\n  <div class=\"container-fluid\">\n    <!-- Brand and toggle get grouped for better mobile display -->\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#bs-example-navbar-collapse-1\" aria-expanded=\"false\">\n        <span class=\"sr-only\">Toggle navigation</span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n        <span class=\"icon-bar\"></span>\n      </button>\n      <!--<a class=\"navbar-brand\" href=\"http://ucsc.cmb.ac.lk/\">UCSC</a>-->\n    </div>\n\n    <!-- Collect the nav links, forms, and other content for toggling -->\n    <div class=\"collapse navbar-collapse\" id=\"bs-example-navbar-collapse-1\">\n      <ul class=\"nav navbar-nav\">\n        <li><a [routerLink]=\"['/']\">Home <span class=\"sr-only\">(current)</span></a></li>\n        <li><a [routerLink]=\"['/about']\">About</a></li>\n      </ul>\n\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li *ngIf=\"!authService.loggedIn()\"><a [routerLink]=\"['/login']\">Login</a></li>\n\n        <li *ngIf=\"authService.loggedIn()\" class=\"dropdown\">\n          <a href=\"#\" class=\"dropdown-toggle\" data-toggle=\"dropdown\" role=\"button\" aria-haspopup=\"true\" aria-expanded=\"false\">{{user.getAuthName()}} <span class=\"caret\"></span></a>\n\n          <ul class=\"dropdown-menu\">\n            <li *ngIf=\"authService.isStaff() || authService.isAdmin() || authService.isHead()\"><a [routerLink]=\"['/profile']\">Profile</a></li>\n            <li *ngIf=\"authService.isStaff() || authService.isAdmin()\"><a [routerLink]=\"['/requestLeaves']\">Request Leaves</a></li>\n            <li *ngIf=\"authService.isStaff() || authService.isAdmin()\"><a [routerLink]=\"['/leaveHistory']\">History of Leaves</a></li>\n            <li *ngIf=\"authService.isAdmin()\"><a [routerLink]=\"['/manageUsers']\">Manage Staff</a></li>\n            <li *ngIf=\"authService.isAdmin() || authService.isHead()\"><a [routerLink]=\"['/addPost']\">Add Post</a></li>\n            <li *ngIf=\"authService.isAdmin()\"><a [routerLink]=\"['/reportGenaration']\">Report Genaration</a></li>\n            <li *ngIf=\"authService.isHead()\"><a [routerLink]=\"['/manageAdmin']\">Manage Users</a></li>\n            <li *ngIf=\"authService.isHead()\"><a [routerLink]=\"['/manageLeaves']\">Manage Leaves</a></li>\n            <li *ngIf=\"authService.isHead()\"><a [routerLink]=\"['/controlDates']\">Control Dates</a></li>\n            <li role=\"separator\" class=\"divider\"></li>\n            <li><a href=\"#\" (click)=\"logoutUser()\">Logout</a></li>\n          </ul>\n        </li>\n      </ul>\n    </div><!-- /.navbar-collapse -->\n  </div><!-- /.container-fluid -->\n</nav>\n\n\n\n"
 
 /***/ }),
 
@@ -1413,6 +1416,114 @@ var ProfileComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/components/register/register.component.css":
+/*!************************************************************!*\
+  !*** ./src/app/components/register/register.component.css ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/components/register/register.component.html":
+/*!*************************************************************!*\
+  !*** ./src/app/components/register/register.component.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Register Faculty - Captain Details Form</h2>\n  <form (submit) = \"registerData()\">\n    \n    <div class = \"form-group col-md-7\">\n      <label>Name</label>\n      <input type=\"text\" [(ngModel)] = \"full_name\" name =\"full_name\" class = \"form-control\">\n    </div>\n    <!--<div class=\"col-md-4\"></div>-->\n\n    <div class = \"form-group col-md-7\">\n      <label>Phone No.</label>\n      <input type=\"text\" [(ngModel)] = \"phone\" name =\"phone\" class = \"form-control\" required>\n    </div>\n    <!--<div class=\"col-md-4\"></div>-->\n\n    <div class = \"form-group col-md-7\">\n      <label>Username</label>\n      <input type=\"text\" [(ngModel)] = \"username\" name =\"username\" class = \"form-control\" required>\n    </div>\n\n    <div class = \"form-group col-md-7\">\n      <label>Password</label>\n      <input type=\"password\" [(ngModel)] = \"password\" name =\"password\" class = \"form-control\" required>\n    </div>\n\n    <div class=\"col-md-7\">\n      <input type=\"submit\" class =\"btn btn-primary\" value = \"Submit\">\n    </div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Name</th>\n\t\t\t   <th>Post</th>\n\t\t\t   <th>Contact</th>\n\t\t\t   <th>Delete</th>\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let user of users\">\n\t\t\t   <td>{{user.full_name}}</td>\n\t\t\t   <td>{{user.post}}</td>\n\t\t\t   <td>{{user.phone}}</td>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteUser(user._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\t\t\t</tr>\n\n\t</table>\n</div>\n\n"
+
+/***/ }),
+
+/***/ "./src/app/components/register/register.component.ts":
+/*!***********************************************************!*\
+  !*** ./src/app/components/register/register.component.ts ***!
+  \***********************************************************/
+/*! exports provided: RegisterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterComponent", function() { return RegisterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _services_auth_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../services/auth.service */ "./src/app/services/auth.service.ts");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! angular2-flash-messages */ "./node_modules/angular2-flash-messages/module/index.js");
+/* harmony import */ var angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var RegisterComponent = /** @class */ (function () {
+    function RegisterComponent(authService, flashMessage, router) {
+        this.authService = authService;
+        this.flashMessage = flashMessage;
+        this.router = router;
+    }
+    RegisterComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.authService.getUser().subscribe(function (user) {
+            _this.users = user;
+        });
+    };
+    RegisterComponent.prototype.registerData = function () {
+        var _this = this;
+        var user = {
+            full_name: this.full_name,
+            post: 'staff',
+            phone: this.phone,
+            username: this.username,
+            password: this.password,
+            state: '2'
+        };
+        this.authService.registerUser(user).subscribe(function (user) {
+            _this.users.push(user);
+            _this.authService.getUser().subscribe(function (user) {
+                _this.users = user;
+            });
+        });
+    };
+    RegisterComponent.prototype.deleteUser = function (id) {
+        var user = this.users;
+        this.authService.deleteUser(id).subscribe(function (data) {
+            if (data.n == 1) {
+                for (var i = 0; i < user.length; i++) {
+                    if (user[i]._id == id) {
+                        user.splice(i, 1);
+                    }
+                }
+            }
+        });
+    };
+    RegisterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-register',
+            template: __webpack_require__(/*! ./register.component.html */ "./src/app/components/register/register.component.html"),
+            styles: [__webpack_require__(/*! ./register.component.css */ "./src/app/components/register/register.component.css")]
+        }),
+        __metadata("design:paramtypes", [_services_auth_service__WEBPACK_IMPORTED_MODULE_1__["AuthService"],
+            angular2_flash_messages__WEBPACK_IMPORTED_MODULE_2__["FlashMessagesService"],
+            _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"]])
+    ], RegisterComponent);
+    return RegisterComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/components/report-genaration/report-genaration.component.css":
 /*!******************************************************************************!*\
   !*** ./src/app/components/report-genaration/report-genaration.component.css ***!
@@ -1519,7 +1630,7 @@ module.exports = "table {\n    font-family: arial, sans-serif;\n    border-colla
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Request Leaves</h2>\n  <form (submit) = \"request()\">\n\n\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <div class = \"form-group\">\n          <label>Subject</label>\n          <input type=\"text\" [(ngModel)] = \"reason\" name =\"reason\" class = \"form-control\" required>\n        </div>\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <div class = \"form-group\">\n          <label>Discription (if any)</label><br>\n          <textarea [(ngModel)]='describe' name =\"describe\" rows=\"6\" cols=\"98\"></textarea>\n        </div>\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <div class = \"form-group\">\n          <label>Date</label>\n          <input type=\"date\" [(ngModel)] = \"date\" name =\"date\" class = \"form-control\" required>\n        </div>\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <input type=\"submit\" class =\"btn btn-primary\" value = \"Submit\">\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Date</th>\n\t\t\t   <th>Reason</th>\n\t\t\t   <th>Describe</th>\n\t\t\t   <th>Delete</th>\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let request of requests\">\n\t\t\t   <td>{{request.date}}</td>\n\t\t\t   <td>{{request.reason}}</td>\n\t\t\t   <td>{{request.describe}}</td>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteRequest(request._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\t\t\t</tr>\n\n\t</table>\n  <br>\n  <br>\n</div>\n"
+module.exports = "<div class = \"container\">\n  <h2 class = \"page-header\"> Request Leaves</h2>\n  <form (submit) = \"request()\">\n\n\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <div class = \"form-group\">\n          <label>Subject</label>\n          <input type=\"text\" [(ngModel)] = \"reason\" name =\"reason\" class = \"form-control\" required>\n        </div>\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <div class = \"form-group\">\n          <label>Discription (if any)</label><br>\n          <textarea [(ngModel)]='describe' name =\"describe\" rows=\"6\" cols=\"98\"></textarea>\n        </div>\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <div class = \"form-group\">\n          <label>Date</label>\n          <input type=\"date\" [(ngModel)] = \"date\" name =\"date\" class = \"form-control\" required>\n        </div>\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n\n    <div class=\"container\">\n      <div class=\"col-md-8\">\n        <input type=\"submit | reset\" class =\"btn btn-primary\" value = \"Submit\">\n      </div>\n      <div class=\"col-md-4\"></div>\n    </div>\n  </form>\n</div>\n<hr>\n<div class = \"container\">\n\t<table>\n\t\t\t<tr>\n\t\t\t   <th>Date</th>\n\t\t\t   <th>Reason</th>\n\t\t\t   <th>Describe</th>\n\t\t\t   <th>Delete</th>\n\t\t\t</tr>\n\n\t\t\t<tr *ngFor = \"let request of requests\">\n\t\t\t   <td>{{request.date}}</td>\n\t\t\t   <td>{{request.reason}}</td>\n\t\t\t   <td>{{request.describe}}</td>\n\t\t\t   <th><input type=\"button\" (click) = \"deleteRequest(request._id)\" value= \"Delete\" class =\"btn btn-danger\"></th>\n\t\t\t</tr>\n\n\t</table>\n  <br>\n  <br>\n</div>\n"
 
 /***/ }),
 
