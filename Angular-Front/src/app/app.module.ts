@@ -30,11 +30,12 @@ import { ControlDatesComponent } from './components/control-dates/control-dates.
 import { AuthService } from './services/auth.service';
 import { PostService } from './services/post.service';
 import { RequestService } from './services/request.service';
+import { RegisterService } from './services/register.service';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { AuthguardService } from './services/authguard.service';
 import { AboutComponent } from './components/about/about.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { RegisterComponent } from './components/register/register.component';
+
 
 
 
@@ -86,7 +87,6 @@ const applicationRoutes:Routes = [
     ControlDatesComponent,
     AboutComponent,
     FooterComponent,
-    RegisterComponent,
 
 
 
@@ -101,7 +101,7 @@ const applicationRoutes:Routes = [
     FlashMessagesModule
 
   ],
-  providers: [AuthService, RequestService, PostService, FlashMessagesService, AuthguardService],
+  providers: [AuthService, RequestService, PostService, FlashMessagesService, AuthguardService, RegisterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
